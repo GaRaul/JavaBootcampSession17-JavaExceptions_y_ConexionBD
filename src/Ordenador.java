@@ -30,6 +30,7 @@ public class Ordenador {
 				
 			} catch (InputMismatchException e) {
 				System.out.println("Valor introducido no reconocido, has perdido 1 intento.");
+				intentosHechos++;
 				intentosRestantes--;
 			}
 			
