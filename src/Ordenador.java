@@ -25,11 +25,11 @@ public class Ordenador {
 				System.out.println("Introduce un numero del 1 al 500 - INTENTOS: " + intentosRestantes);
 				numeroIntento = teclado.nextInt();
 				intentosHechos++;
-				
 				comprobarNumero(numeroIntento);
 				
 			} catch (InputMismatchException e) {
 				System.out.println("Valor introducido no reconocido, has perdido 1 intento.");
+				teclado.nextLine();
 				intentosHechos++;
 				intentosRestantes--;
 			}
