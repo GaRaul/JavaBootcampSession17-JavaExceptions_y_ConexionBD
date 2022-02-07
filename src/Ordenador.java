@@ -26,7 +26,7 @@ public class Ordenador {
 				numeroIntento = teclado.nextInt();
 				intentosHechos++;
 				
-				comprobarNumero(numero, numeroIntento);
+				comprobarNumero(numeroIntento);
 				
 			} catch (InputMismatchException e) {
 				System.out.println("Valor introducido no reconocido, has perdido 1 intento.");
@@ -39,7 +39,7 @@ public class Ordenador {
 		System.out.println("Te has quedado sin intentos :(");
 	}
 
-	public static void comprobarNumero(int numero, int numeroIntento) {
+	public static void comprobarNumero(int numeroIntento) {
 
 		if (numero == numeroIntento) {
 			System.out.println("Felicidades, has acertado el numero!!\nHas hecho " + intentosHechos + " intentos.");
