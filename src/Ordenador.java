@@ -42,7 +42,7 @@ public class Ordenador {
 
 		if (numero == numeroIntento) {
 			System.out.println("Felicidades, has acertado el numero!!\nHas hecho " + intentosHechos + " intentos.");
-			System.exit(0);
+			System.exit(0); // Cuando el usuario adivina el numero el programa acaba.
 			
 		} else if (numero > numeroIntento){
 			System.out.println("Incorrecto, el numero es mayor a " + numeroIntento + ", has perdido 1 intento.");
